@@ -1,6 +1,7 @@
 import './style.css';
 import './home.js';
 import './about.js';
+import './menu.js';
 
 // alert('meow meow!');
 
