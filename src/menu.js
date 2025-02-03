@@ -1,152 +1,154 @@
-export let menuPage = (function(){
-    let content = document.getElementById('content');
-    let heading = document.createElement('h2');
+let menuPage = function(){
+    let _content = document.getElementById('content');
     
-    heading.textContent = "Menu";
-    content.appendChild(heading);
+    function getHeading() {
+        let _heading = document.createElement('h2');
+        _heading.textContent = "Menu";
+        _content.appendChild(_heading);
+    };
 
     function getEntrees(){
-        let entree = document.createElement('h3');
-        let ent1 = document.createElement('p');
-        let entPrice1 = document.createElement('span');
-        let entDesc1 = document.createElement('p');
-        let ent2 = document.createElement('p');
-        let entPrice2 = document.createElement('span');
-        let entDesc2 = document.createElement('p');
-        let ent3 = document.createElement('p');
-        let entPrice3 = document.createElement('span');
-        let entDesc3 = document.createElement('p');
+        let _entree = document.createElement('h3');
+        let _ent1 = document.createElement('h4');
+        let _entPrice1 = document.createElement('span');
+        let _entDesc1 = document.createElement('p');
+        let _ent2 = document.createElement('h4');
+        let _entPrice2 = document.createElement('span');
+        let _entDesc2 = document.createElement('p');
+        let _ent3 = document.createElement('h4');
+        let _entPrice3 = document.createElement('span');
+        let _entDesc3 = document.createElement('p');
 
-        entree.textContent = "Entrée";
-        ent1.textContent = "Tuna Tartare-Tini";
-        entPrice1.textContent = "2";
-        entDesc1.textContent = "A purrfectly portioned tuna tartare served in a tiny dish.";
-        ent2.textContent = "Mice Croquettes";
-        entPrice2.textContent = "2";
-        entDesc2.textContent = "No actual mice, just a crunchy treat shaped like one!";
-        ent3.textContent = "Meowzers' Macarons";
-        entPrice3.textContent = "3";
-        entDesc3.textContent = "Savory salmon mousse sandwiched between delicate tuna crisps.";
+        _entree.textContent = "Entrée";
+        _ent1.textContent = "Tuna Tartare-Tini";
+        _entPrice1.textContent = "2";
+        _entDesc1.textContent = "A purrfectly portioned tuna tartare served in a tiny dish.";
+        _ent2.textContent = "Mice Croquettes";
+        _entPrice2.textContent = "2";
+        _entDesc2.textContent = "No actual mice, just a crunchy treat shaped like one!";
+        _ent3.textContent = "Meowzers' Macarons";
+        _entPrice3.textContent = "3";
+        _entDesc3.textContent = "Savory salmon mousse sandwiched between delicate tuna crisps.";
 
-        content.appendChild(entree);
+        _content.appendChild(_entree);
 
-        content.appendChild(ent1);
-        ent1.appendChild(entPrice1);
-        content.appendChild(entDesc1);
+        _content.appendChild(_ent1);
+        _ent1.appendChild(_entPrice1);
+        _content.appendChild(_entDesc1);
 
-        content.appendChild(ent2);
-        ent2.appendChild(entPrice2);
-        content.appendChild(entDesc2);
+        _content.appendChild(_ent2);
+        _ent2.appendChild(_entPrice2);
+        _content.appendChild(_entDesc2);
 
-        content.appendChild(ent3);
-        ent3.appendChild(entPrice3);
-        content.appendChild(entDesc3);
+        _content.appendChild(_ent3);
+        _ent3.appendChild(_entPrice3);
+        _content.appendChild(_entDesc3);
     }
 
     function getMains(){
-        let main = document.createElement('h3');
-        let main1 = document.createElement('h4');
-        let mainPrice1 = document.createElement('span');
-        let mainDesc1 = document.createElement('p');
-        let main2 = document.createElement('h4');
-        let mainPrice2 = document.createElement('span');
-        let mainDesc2 = document.createElement('p');
-        let main3 = document.createElement('h4');
-        let mainPrice3 = document.createElement('span');
-        let mainDesc3 = document.createElement('p');
-        let main4 = document.createElement('h4');
-        let mainPrice4 = document.createElement('span');
-        let mainDesc4 = document.createElement('p');
+        let _main = document.createElement('h3');
+        let _main1 = document.createElement('h4');
+        let _mainPrice1 = document.createElement('span');
+        let _mainDesc1 = document.createElement('p');
+        let _main2 = document.createElement('h4');
+        let _mainPrice2 = document.createElement('span');
+        let _mainDesc2 = document.createElement('p');
+        let _main3 = document.createElement('h4');
+        let _mainPrice3 = document.createElement('span');
+        let _mainDesc3 = document.createElement('p');
+        let _main4 = document.createElement('h4');
+        let _mainPrice4 = document.createElement('span');
+        let _mainDesc4 = document.createElement('p');
 
-        main.textContent = "Main";
-        main1.textContent = "The Fancy Feast Platter";
-        mainPrice1.textContent = "5";
-        mainDesc1.textContent = "A deluxe selection of the freshest salmon, chicken, and turkey.";
-        main2.textContent = "Meowssaka";
-        mainPrice2.textContent = "4";
-        mainDesc2.textContent = "Layers of tuna, eggplant, and creamy béchamel.";
-        main3.textContent = "Pawsta alla Napawlitana";
-        mainPrice3.textContent = "4";
-        mainDesc3.textContent = "Homemade catnip-infused noodles with a rich sardine sauce.";
-        main4.textContent = "Claw-some Curry";
-        mainPrice4.textContent = "7";
-        mainDesc4.textContent = "A mild and comforting pumpkin and crab blend.";
+        _main.textContent = "Main";
+        _main1.textContent = "The Fancy Feast Platter";
+        _mainPrice1.textContent = "5";
+        _mainDesc1.textContent = "A deluxe selection of the freshest salmon, chicken, and turkey.";
+        _main2.textContent = "Meowssaka";
+        _mainPrice2.textContent = "4";
+        _mainDesc2.textContent = "Layers of tuna, eggplant, and creamy béchamel.";
+        _main3.textContent = "Pawsta alla Napawlitana";
+        _mainPrice3.textContent = "4";
+        _mainDesc3.textContent = "Homemade catnip-infused noodles with a rich sardine sauce.";
+        _main4.textContent = "Claw-some Curry";
+        _mainPrice4.textContent = "7";
+        _mainDesc4.textContent = "A mild and comforting pumpkin and crab blend.";
 
-        content.appendChild(main);
-        content.appendChild(main1);
-        main1.appendChild(mainPrice1);
-        content.appendChild(mainDesc1);
+        _content.appendChild(_main);
+        _content.appendChild(_main1);
+        _main1.appendChild(_mainPrice1);
+        _content.appendChild(_mainDesc1);
 
-        content.appendChild(main2);
-        main2.appendChild(mainPrice2);
-        content.appendChild(mainDesc2);
+        _content.appendChild(_main2);
+        _main2.appendChild(_mainPrice2);
+        _content.appendChild(_mainDesc2);
 
-        content.appendChild(main3);
-        main3.appendChild(mainPrice3);
-        content.appendChild(mainDesc3);
+        _content.appendChild(_main3);
+        _main3.appendChild(_mainPrice3);
+        _content.appendChild(_mainDesc3);
 
-        content.appendChild(main4);
-        main4.appendChild(mainPrice4);
-        content.appendChild(mainDesc4);
+        _content.appendChild(_main4);
+        _main4.appendChild(_mainPrice4);
+        _content.appendChild(_mainDesc4);
     }
 
     function getDesserts(){
-        let dessert = document.createElement('h3');
-        let dess1 = document.createElement('h4');
-        let dessPrice1 = document.createElement('span');
-        let dessDesc1 = document.createElement('p');
-        let dess2 = document.createElement('h4');
-        let dessPrice2 = document.createElement('span');
-        let dessDesc2 = document.createElement('p');  
+        let _dessert = document.createElement('h3');
+        let _dess1 = document.createElement('h4');
+        let _dessPrice1 = document.createElement('span');
+        let _dessDesc1 = document.createElement('p');
+        let _dess2 = document.createElement('h4');
+        let _dessPrice2 = document.createElement('span');
+        let _dessDesc2 = document.createElement('p');  
         
-        dessert.textContent = "Dessert";
-        dess1.textContent = "Pawffles";
-        dessPrice1.textContent = "2";
-        dessDesc1.textContent = "Crispy fish-shaped waffles drizzled with creamy yogurt.";
-        dess2.textContent = "Whisker Whip Mousse";
-        dessPrice2.textContent = "2";
-        dessDesc2.textContent = "A fluffy, fishy delight topped with a sprig of catnip.";
+        _dessert.textContent = "Dessert";
+        _dess1.textContent = "Pawffles";
+        _dessPrice1.textContent = "2";
+        _dessDesc1.textContent = "Crispy fish-shaped waffles drizzled with creamy yogurt.";
+        _dess2.textContent = "Whisker Whip Mousse";
+        _dessPrice2.textContent = "2";
+        _dessDesc2.textContent = "A fluffy, fishy delight topped with a sprig of catnip.";
 
-        content.appendChild(dessert);
-        content.appendChild(dess1);
-        dess1.appendChild(dessPrice1);
-        content.appendChild(dessDesc1);
-        content.appendChild(dess2);
-        dess2.appendChild(dessPrice2);
-        content.appendChild(dessDesc2);
+        _content.appendChild(_dessert);
+        _content.appendChild(_dess1);
+        _dess1.appendChild(_dessPrice1);
+        _content.appendChild(_dessDesc1);
+        _content.appendChild(_dess2);
+        _dess2.appendChild(_dessPrice2);
+        _content.appendChild(_dessDesc2);
     }
 
     function getDrinks(){
-        let drinks = document.createElement('h3');
-        let drink1 = document.createElement('h4');
-        let drinkPrice1 = document.createElement('span');
-        let drinkDesc1 = document.createElement('p');
-        let drink2 = document.createElement('h4');
-        let drinkPrice2 = document.createElement('span');
-        let drinkDesc2 = document.createElement('p');    
+        let _drinks = document.createElement('h3');
+        let _drink1 = document.createElement('h4');
+        let _drinkPrice1 = document.createElement('span');
+        let _drinkDesc1 = document.createElement('p');
+        let _drink2 = document.createElement('h4');
+        let _drinkPrice2 = document.createElement('span');
+        let _drinkDesc2 = document.createElement('p');    
 
-        drinks.textContent = "Drinks";
-        drink1.textContent = "Catpuccino";
-        drinkPrice1.textContent = "1";
-        drinkDesc1.textContent = "Frothy, warm bone broth with a sprinkle of powdered chicken.";
-        drink2.textContent = "Meowmosa";
-        drinkPrice2.textContent = "1";
-        drinkDesc2.textContent = "A bubbly blend of fish broth and goat’s milk, garnished with a sprig of catnip.";
+        _drinks.textContent = "Drinks";
+        _drink1.textContent = "Catpuccino";
+        _drinkPrice1.textContent = "1";
+        _drinkDesc1.textContent = "Frothy, warm bone broth with a sprinkle of powdered chicken.";
+        _drink2.textContent = "Meowmosa";
+        _drinkPrice2.textContent = "1";
+        _drinkDesc2.textContent = "A bubbly blend of fish broth and goat’s milk, garnished with a sprig of catnip.";
 
-        content.appendChild(drinks);
-        content.appendChild(drink1);
-        drink1.appendChild(drinkPrice1);
-        content.appendChild(drinkDesc1);
-        content.appendChild(drink2);
-        drink2.appendChild(drinkPrice2);
-        content.appendChild(drinkDesc2);
+        _content.appendChild(_drinks);
+        _content.appendChild(_drink1);
+        _drink1.appendChild(_drinkPrice1);
+        _content.appendChild(_drinkDesc1);
+        _content.appendChild(_drink2);
+        _drink2.appendChild(_drinkPrice2);
+        _content.appendChild(_drinkDesc2);
     }
 
-    return {
-        getEntrees,
-        getMains,
-        getDesserts,
-        getDrinks
-    }
+    getHeading();
+    getEntrees();
+    getMains();
+    getDesserts();
+    getDrinks();
+};
 
-}());
+export {menuPage};

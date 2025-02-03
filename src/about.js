@@ -1,9 +1,9 @@
-export let aboutPage = (function(){
+let aboutPage = function(){
     let content = document.getElementById('content');
     let heading = document.createElement('h2');
     let para1 = document.createElement('p');
     let para2 = document.createElement('p');
-    let para3 = documentl.createElement('p');
+    let para3 = document.createElement('p');
     let para4 = document.createElement('p');
     let para5 = document.createElement('p');
 
@@ -20,4 +20,6 @@ export let aboutPage = (function(){
     content.appendChild(para3);
     content.appendChild(para4);
     content.appendChild(para5);
-}());
+}
+
+export {aboutPage};
